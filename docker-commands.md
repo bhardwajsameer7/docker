@@ -29,6 +29,13 @@
 11. **Stop all the containers :** docker stop $(docker ps -q)
 12. **Delete all the stopped containers :** docker rm $(docker ps -a -q)
 
+## Create vs Start vs Run
+
+Start : is used to start a stopped docker container. doesn't create a new container.
+Create : is used to create a new container from image but does not start container.
+RUN : is used to create a container from image and start it.
+
+
 
 
 
