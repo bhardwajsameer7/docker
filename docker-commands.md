@@ -85,7 +85,17 @@ Are you sure you want to continue? [y/N]
 ```
 
 
+## Registry Command
 
+1. **Search for specific image or group of images in docker registry based on KEY** : docker search <KEY>
+2. **Limit search :** docker search -filter is-automated=true ubuntu
+
+"is-automated=true" is a filter that limits the results to images that are automatically built by Docker Hub's Automated Build system.
+Automated Build:
+
+An automated build is an image that is automatically built by Docker Hub based on the Dockerfile hosted in a linked GitHub or Bitbucket repository. This ensures that the image is directly built from source code and is often considered more trustworthy because it’s less likely to be tampered with manually.
+
+eg for official images: docker search --filter "is-official=true" nginx
 
 
   
